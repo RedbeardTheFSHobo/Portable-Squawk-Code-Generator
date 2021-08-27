@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</head>
+	<body>
+	<div class="page-header">
+		<div class="container">
+  			<h1>Squawk Code Generator</h1>
+			<button onclick="generateSquawk()">Generate</button>
+		</div>
+	</div>
+	<div class="jumbotron">
+	  <div class="container">
+		<h1 id="squawk">
+- - - -
+		</h1>
+	  </div>
+	</div>
+<script>
+function generateSquawk(){
+	var squawk = "3";
+	squawk += Math.floor((Math.random() * 7) + 1);
+	squawk += Math.floor((Math.random() * 7) + 1);
+	squawk += Math.floor((Math.random() * 7) + 1);
+	document.getElementById("squawk").innerHTML = squawk;
+}
+</script>
+	</body>
+</html>
